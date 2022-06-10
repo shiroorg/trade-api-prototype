@@ -2,7 +2,7 @@
 
 namespace Api;
 
-class TradePayeer{
+class TradePayeer implements \InterfaceAccount {
 
     /**
      * @var array
@@ -19,5 +19,9 @@ class TradePayeer{
         $this->arParams = $params;
     }
 
+    public function Account()
+    {
+        // TODO: Implement Account() method.
+    }
 
 }

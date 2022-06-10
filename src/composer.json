@@ -1,0 +1,16 @@
+{
+  "name": "vendor_name/src",
+  "description": "Demo project",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "shiroorg",
+      "email": "kremezion@inbox.ru"
+    }
+  ],
+  "require": {
+    "php": ">=8.0",
+    "guzzle/http": "6.*"
+  }
+}
