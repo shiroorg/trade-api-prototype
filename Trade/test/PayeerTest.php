@@ -12,5 +12,14 @@ final class PayeerTest extends TestCase
         return $stack;
     }
 
+    public function testCorrectInit(): array
+    {
+
+        $newTrade = new \Trade\Payeer();
+        $this->assertEmpty($newTrade->GetError());
+
+        return $newTrade->GetError();
+    }
+
 
 }

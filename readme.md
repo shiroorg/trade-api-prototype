@@ -17,6 +17,12 @@ Configuration example `composer`
 ```json
  "minimum-stability": "dev",
   "require": {
-    "trade-api-prototype": "dev-master"
+    "trade-api-prototype": "dev-master",
+    "phpunit/phpunit": "^9.5"
   }
 ```
+Command run `test`
+```bash
+composer exec phpunit  --verbose PayeerTest 
+```
+
