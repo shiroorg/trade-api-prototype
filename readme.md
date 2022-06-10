@@ -17,6 +17,6 @@ Configuration example `composer`
 ```json
  "minimum-stability": "dev",
   "require": {
-    "trade-api-prototype/src": "dev-master"
+    "trade-api-prototype": "dev-master"
   }
 ```

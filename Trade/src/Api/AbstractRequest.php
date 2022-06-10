@@ -70,7 +70,7 @@ class AbstractRequest implements InterfaceGetError, InterfaceInfo, InterfaceOrde
     /**
      * @return array
      */
-    public function GetError()
+    public function GetError(): array
     {
         return $this->arError;
     }
@@ -79,7 +79,7 @@ class AbstractRequest implements InterfaceGetError, InterfaceInfo, InterfaceOrde
      * @return mixed
      * @throws \Exception
      */
-    public function Info()
+    public function Info(): array
     {
         $res = $this->Request(array(
             'method' => 'info',
@@ -93,7 +93,7 @@ class AbstractRequest implements InterfaceGetError, InterfaceInfo, InterfaceOrde
      * @return mixed
      * @throws \Exception
      */
-    public function Orders(string $pair = 'BTC_USDT')
+    public function Orders(string $pair = 'BTC_USDT'): array
     {
         $res = $this->Request(array(
             'method' => 'orders',
@@ -109,7 +109,7 @@ class AbstractRequest implements InterfaceGetError, InterfaceInfo, InterfaceOrde
      * @return mixed
      * @throws \Exception
      */
-    public function Account()
+    public function Account(): array
     {
         $res = $this->Request(array(
             'method' => 'account',
@@ -123,7 +123,7 @@ class AbstractRequest implements InterfaceGetError, InterfaceInfo, InterfaceOrde
      * @return mixed
      * @throws \Exception
      */
-    public function OrderCreate(array $req = array())
+    public function OrderCreate(array $req = array()): array
     {
         $res = $this->Request(array(
             'method' => 'order_create',
@@ -138,7 +138,7 @@ class AbstractRequest implements InterfaceGetError, InterfaceInfo, InterfaceOrde
      * @return mixed
      * @throws \Exception
      */
-    public function OrderStatus(array $req = array())
+    public function OrderStatus(array $req = array()): array
     {
         $res = $this->Request(array(
             'method' => 'order_status',
@@ -153,7 +153,7 @@ class AbstractRequest implements InterfaceGetError, InterfaceInfo, InterfaceOrde
      * @return mixed
      * @throws \Exception
      */
-    public function MyOrders(array $req = array())
+    public function MyOrders(array $req = array()): array
     {
         $res = $this->Request(array(
             'method' => 'my_orders',
