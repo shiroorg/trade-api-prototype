@@ -1,8 +1,8 @@
 <?php
 
-namespace Api;
+namespace Trade\Api;
 
-class TradePayeer implements \InterfaceAccount {
+class Payeer implements \InterfaceAccount {
 
     /**
      * @var array

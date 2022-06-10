@@ -1,7 +1,8 @@
 {
   "name": "trade-api-prototype/src",
-  "description": "Demo project payeer trade-api-prototype",
-  "license": "MIT",
+  "description": "Demo project",
+  "minimum-stability": "stable",
+  "license": "proprietary",
   "authors": [
     {
       "name": "shiroorg",
@@ -9,6 +10,7 @@
     }
   ],
   "require": {
-    "php": ">=8.0"
+    "php": ">=8.0",
+    "guzzle/http": ">=6.*"
   }
 }
