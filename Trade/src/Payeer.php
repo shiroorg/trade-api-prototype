@@ -1,27 +1,10 @@
 <?php
 
-namespace Trade\Api;
+namespace Trade;
 
-class Payeer implements \InterfaceAccount {
+use Trade\Api\AbstractRequest;
 
-    /**
-     * @var array
-     */
-    private $arParams = array();
-
-    /**
-     * @var array
-     */
-    private $arError = array();
-
-    public function __construct($params = array())
-    {
-        $this->arParams = $params;
-    }
-
-    public function Account()
-    {
-        // TODO: Implement Account() method.
-    }
+class Payeer extends AbstractRequest
+{
 
 }
